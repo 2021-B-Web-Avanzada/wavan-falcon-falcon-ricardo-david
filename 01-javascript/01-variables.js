@@ -77,7 +77,7 @@ if(undefined){
 //objetos JS (JSON) -Arreglos
 const ricardo={
     nombre: "Ricardo",
-    false:'Falcon',
+    apellido:'Falcon',
     edad: 32,
     hijos: null,
     zapatos: undefined,
@@ -86,5 +86,79 @@ const ricardo={
         color: 'plomo',
         talla: '40',
     },
-    mascotas:['Cacjetes','Pequitas','Panda'],
+    mascotas:['Cachetes','Pequitas','Panda'],
 };
+
+//Acceder  a las propiedades del objeto
+ricardo.nombre; // "Ricardo"
+ricardo.apellido; //"Falcon"
+ricardo["nombre"]; //"RICARDO"
+console.log(ricardo);
+ricardo.nombre = "David";
+console.log(ricardo);
+ricardo["nombre"] = "Ricardo";
+ricardo.sueldo; //undefined
+console.log(ricardo.sueldo);
+
+ricardo.sueldo=1.2;
+console.log(ricardo.sueldo); //1.2
+ricardo["gastos"]=0.8;
+console.log(ricardo.gastos); //0.8
+ricardo.nombre = undefined;
+console.log(ricardo);
+console.log(Object.keys(ricardo));
+console.log(Object.values(ricardo));
+
+
+delete ricardo.nombre //Eliminar la llave nombre
+console.log(ricardo);
+
+// Variables por valor o referencia
+//Variables por valor en JS son las primitivas: number, string, boolean
+let edadRicardo = 24;
+let edadDavid = edadRicardo;     // guardamos una primitiva en otra variable
+                                    // variables por valor
+console.log(edadRicardo);//24
+console.log(edadDavid); //24
+edadRicardo = edadRicardo +1;
+console.log(edadRicardo); // 25
+console.log(edadDavid); //24
+
+// variables por referencia: object ({},[])
+// let rafael = {
+//     nombre: "Rafael"
+// };
+// let lenin = rafael;
+// console.log(rafael);
+// console.log(lenin);
+// lenin.nombre="Lenin";
+// console.log(rafael);
+// console.log(lenin);
+//
+// delete rafael.nombre;
+// console.log(rafael);
+// console.log(lenin);
+
+let rafael = {
+    nombre: "Rafael"
+};
+
+let lenin = Object.assign({}, rafael);
+console.log(rafael);
+console.log(lenin);
+lenin.nombre="Lenin";
+delete rafael.nombre;
+console.log(rafael);
+console.log(lenin);
+
+
+//clonar arreglos
+let arregloNumeros = [1,2,3,4,5];
+let arregloClonado = Object.assign([], arregloNumeros);
+console.log(arregloNumeros);
+console.log(arregloClonado);
+arregloNumeros[0] = 200;
+arregloClonado[0] = 100;
+console.log(arregloNumeros);
+console.log(arregloClonado);
+
