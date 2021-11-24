@@ -146,3 +146,18 @@ const respuestaEvery = arreglo
     );
 console.log('respuestaEvery', respuestaEvery);
 
+//[1,2,3,5,6,5,4,3,1]
+//Reduce va de izquierda a derecha
+// reduce right va de derecha a izquierda
+//100 < 3 Puntos de vida
+//100 -1 -2 -3 -5 -6 -5 -4 -3 -1
+//0 +1 +2 +3 +5 +6 +5 +4 +3 +1
+//[1,2,3,5,6,5,4,3,1]
+const respuestaReduce = arreglo
+.reduce(
+    function (valorAcumulado, valorActual,indice,arreglo){
+        return (valorAcumulado + valorActual.nota);
+    },
+    100 //  Acumulador
+);
+console.log('respuestaReduce', respuestaReduce);
