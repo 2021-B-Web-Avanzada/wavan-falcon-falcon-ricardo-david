@@ -42,6 +42,10 @@ const routes: Routes = [
         component: RutaUsuarioComponent,
       },
       {
+        path:'usuario/:idUsuario',
+        component: RutaUsuarioComponent,
+      },
+      {
         path:'post',
         component: RutaPostComponent,
         canActivate: [EsAdministradorGuard]
