@@ -13,6 +13,10 @@ import { RutaAppComponent } from './rutas/ruta-app/ruta-app.component';
 import {AuthService} from "./servicios/auth/auth.service";
 import {EstaLogeadoGuard} from "./servicios/auth/esta-logeado.guard";
 import {EsAdministradorGuard} from "./servicios/auth/es-administrador.guard";
+import {BannerImagenesModule} from "./componentes/banner-imagenes/banner-imagenes.module";
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
+import { RutaUsuarioPerfilComponent } from './rutas/ruta-usuario-perfil/ruta-usuario-perfil.component';
 
 @NgModule({
   declarations: [ //componentes
@@ -23,11 +27,15 @@ import {EsAdministradorGuard} from "./servicios/auth/es-administrador.guard";
     RutaInicioComponent,
     RutaUsuarioComponent,
     RutaPostComponent,
-    RutaAppComponent
+    RutaAppComponent,
+    RutaUsuarioPerfilComponent
   ],
   imports: [ //modulos importados
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BannerImagenesModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [//servicios
     AuthService,
