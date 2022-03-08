@@ -1,0 +1,43 @@
+<div class="col-md-4 offset-md-2">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <input type="text"  name="nombre_equipo" [(ngModel)]="equipo.nombre_equipo" placeholder="Nombre del Equipo" class="form-control"
+                        autofocus >
+                </div>
+                <br>               
+                <div class="form-group">
+                    <input type="text" name="nombre_presidente" [(ngModel)]="equipo.nombre_presidente" placeholder="Nombre del Presidente"
+                        class="form-control">
+                </div>
+                <br>                
+                <div class="form-group">
+                    <input type="date" name="fundacion" [(ngModel)]="equipo.fundacion" placeholder="Fecha de fundación del Equipo"
+                        class="form-control">
+                </div>
+                <br>                
+                <div class="form-group">
+                    <input type="url" name="imagen" [(ngModel)]="equipo.imagen" placeholder="Imagen" class="form-control">
+                </div>
+                <br>
+                <button class="btn btn-success btn-block text" (click)="edit ? updateEquipo() : saveNewEquipo()">
+                    Guardar
+
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card card-body text-center">
+        <img [src]="equipo.imagen == '' ? '/assets/noimage.png' : equipo.imagen" class="card-img-top">
+        <h3>{{equipo.id}}. {{equipo.nombre_equipo == '' ? 'Nombre del equipo': equipo.nombre_equipo}}</h3> 
+        <p>{{equipo.nombre_presidente == '' ? 'Nombre del presidente del equipo': equipo.nombre_presidente}}</p>
+        <p>{{equipo.fundacion}}</p>
+       <!-- <p>{{equipo.created_ad | date: 'yyyy-MM-dd'}}</p>-->
+       
+
+    </div>
+</div>

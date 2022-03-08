@@ -1,0 +1,24 @@
+<div class="col-md-4" *ngFor="let equipo of equipos">
+    <div class="card text-center">
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+            {{equipo.nombre_equipo}}
+            <button class="btn btn-danger" (click)="deleteEquipo(equipo.id_equipo)">
+                <i class="far fa-trash-alt"></i>
+
+            </button>
+
+        </div>
+        <img [src]='equipo.imagen' class="card-img-top">
+        <div class="card-body">
+            <p>{{equipo.nombre_presidente}}</p>
+            <p>{{equipo.fundacion}}</p>
+            <p>{{equipo.nombre_presidente}}</p>
+            <a [routerLink]="['/equipos/editar', equipo.id_equipo]" class="btn btn-info btn-block" >Editar Equipo</a>
+            <a href="equipos/1/jugadores" class="btn btn-info btn-warning" >Ver Jugadores</a>
+
+
+        </div>
+
+    </div>
+
+</div>
