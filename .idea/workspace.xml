@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42725f84-2baf-49ed-a44b-cc967f92830c" name="Changes" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen Primer Bimestre/website" beforeDir="false" afterPath="$PROJECT_DIR$/Examen Primer Bimestre/website" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/01-javascript/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/01-javascript/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deber-02/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/deber-02/package.json" afterDir="false" />
+>>>>>>> desarrollo
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +45,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
+    <property name="TODO_SCOPE" value="All Places" />
+=======
+>>>>>>> desarrollo
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.13.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="16.11.13" />
@@ -89,6 +98,11 @@
       <workItem from="1642051600787" duration="3750000" />
       <workItem from="1642075773708" duration="5517000" />
       <workItem from="1642507637480" duration="4835000" />
+<<<<<<< HEAD
+      <workItem from="1642562531418" duration="344000" />
+      <workItem from="1642775032819" duration="564000" />
+=======
+>>>>>>> desarrollo
     </task>
     <servers />
   </component>
